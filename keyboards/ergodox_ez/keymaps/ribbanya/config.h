@@ -1,6 +1,13 @@
 #pragma once
 
-#define JOYSTICK_BUTTON_COUNT 16
+// 8: A, B, X, Y, Z, L, R, Start
+// 4: Dpad Up, Down, Left, Right
+#define JOYSTICK_BUTTON_COUNT 12
+
+// 2: Analog X, Analog Y
+// 2: C-stick X, C-stick Y
+// 2: L trigger, R trigger
+#define JOYSTICK_AXES_COUNT 6
 
 /*
  * Feature disable options
