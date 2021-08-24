@@ -1,4 +1,5 @@
 #include QMK_KEYBOARD_H
+#include "joystick.h"
 #include "melee.h"
 
 enum layers {
@@ -166,6 +167,15 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         }
     }
     return true;
+}
+
+void joystick_task(void) {
+    process_melee(gc_input, &joystick_status);
+
+    // Send unconditionally for now
+    // Could be optimized when previous inputs != current
+    // joystick_status.status & JS_UPDATED
+    send_joystick_packet(&joystick_status);
 }
 
 // Runs just one time when the keyboard initializes.

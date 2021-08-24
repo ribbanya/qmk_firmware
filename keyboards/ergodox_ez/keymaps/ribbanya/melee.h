@@ -1,3 +1,5 @@
+#include "joystick.h"
+
 typedef union {
     uint32_t raw;
     struct {
@@ -18,3 +20,5 @@ typedef union {
         bool cstick_right : 1;
     };
 } gc_input_t;
+
+void process_melee(gc_input_t input, joystick_t *joystick_status);
