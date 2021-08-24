@@ -67,7 +67,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [B0XX] = LAYOUT_ergodox_pretty(
   // left hand
-  DF(B0XX), DF(HBOX), KC_NO, KC_NO, KC_NO,   KC_NO,          KC_NO,              KC_NO, KC_NO, KC_NO, KC_NO,        KC_NO,   KC_NO, KC_NO,
+  // DF(B0XX), DF(HBOX)
+  KC_NO,    KC_NO,    KC_NO, KC_NO, KC_NO,   KC_NO,          KC_NO,              KC_NO, KC_NO, KC_NO, KC_NO,        KC_NO,   KC_NO, KC_NO,
   KC_NO,    KC_NO,    KC_NO, KC_NO, KC_NO,   KC_NO,          KC_NO,              KC_NO, GC_R,  GC_Y,  GC_R_LS,      GC_R_MS, KC_NO, GC_START,
   KC_NO,    KC_NO,    KC_NO, GC_ANALOG_LEFT, GC_ANALOG_DOWN, GC_ANALOG_RIGHT,    GC_B,  GC_X,  GC_Z,  GC_ANALOG_UP, KC_NO,   KC_NO,
   KC_NO,    KC_NO,    GC_L,  KC_NO, KC_NO,   KC_NO,          KC_NO,              KC_NO, KC_NO, KC_NO, KC_NO,        KC_NO,   KC_NO, KC_NO,
